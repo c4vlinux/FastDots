@@ -10,7 +10,7 @@ function list_configs() {
 
     # AKA. ratelimited by github
     if [[ "$repos" == "" ]]; then
-        repos="gnome_green_feb_25 gnome_modern_feb_25 sddm_astronaut_feb_25"
+        repos="gnome_green_feb_25 gnome_modern_feb_25 grub_2themes_feb_25 sddm_astronaut_feb_25"
     fi
 
     echo $repos | tr ' ' '\n' | awk -v github="$GITHUB_NAME" 'BEGIN { printf "%-3s %-20s %-40s\n", "ID", "NAME", "URL" } { printf "%-3s %-20s %-40s\n", NR, $1, "https://github.com/" github "/" $1 }'

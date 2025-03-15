@@ -21,7 +21,7 @@ function load_config() {
     # Usage: load_config $config
     cd ~/
     echo ">> Installing $config..."
-    command='bash <(curl -s "https://raw.githubusercontent.com/c4dots/$1/refs/heads/main/pacman.sh") --ignore-wrong-attr '
+    command='bash <(curl -s "https://raw.githubusercontent.com/c4dots/$1/refs/heads/main/installer.sh") --ignore-wrong-attr '
 
     if [[ "$diodon" = false ]]; then
         command+=" --no-diodon"

@@ -37,8 +37,6 @@ function load_config() {
 
     eval "$command"
 
-    cd ~/
-    sudo rm -R "$1"
     echo ">> Done!"
 }
 
